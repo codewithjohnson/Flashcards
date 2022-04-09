@@ -1,7 +1,7 @@
-*{
-    margin:0;
-    border:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -15,70 +15,79 @@ body{
     height: 100%;
 }
 
-.game-container{
-    margin-top:30px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.game-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1{
-    font-family: 'Roboto Condensed', sans-serif;;
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
 }
-.cards{
-    color:white;
-    margin-top:10px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap:10px;
-
-}
-
-.card-container{
-    perspective: 1000px;
-}
-.card{
-    transition: all 1s linear;
-    transform-style: preserve-3d;
+.cards {
+  color: white;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
 }
 
-.card{
-    border:0 solid rgb(123, 205, 102);
-    border-radius: 10px;
-    background-color: cadetblue;
-    cursor: pointer;
-    font-size: 0.9em;
-    position: relative;
-    text-align: center;
-    width:110px;
-    height:110px;
-    word-break: break-word;
-
+.card-container {
+  perspective: 1000px;
+}
+.card {
+  transition: all 1s linear;
+  transform-style: preserve-3d;
 }
 
-.front, .back{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:absolute;
-    width:100%;
-    height: 100%;
+.card {
+  border: 0 solid rgb(123, 205, 102);
+  border-radius: 10px;
+  background-color: cadetblue;
+  cursor: pointer;
+  font-size: 0.9em;
+  position: relative;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  word-break: break-word;
 }
 
-.front{
-    backface-visibility: hidden;
-    border-top:1px solid white;
-    background-color: rgb(9, 110, 116);
-    z-index: 2;
+.front,
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.back{
-    background-color: rgb(75, 14, 218);
-    z-index: 1;
-    transform:rotateX(180deg);
+.front {
+  backface-visibility: hidden;
+  border-top: 1px solid white;
+  background-color: rgb(9, 110, 116);
+  z-index: 2;
 }
 
-.card-container:hover .card{
-    transform:rotateX(180deg);
+.back {
+  background-color: rgb(75, 14, 218);
+  z-index: 1;
+  transform: rotateX(180deg);
+}
+
+.card-container:hover .card {
+  transform: rotateX(180deg);
+}
+
+@media screen and (max-width: 480px) {
+    .cards{
+        height: 500px;
+    }
+
+    body{
+        background-color:red;
+    }
 }
