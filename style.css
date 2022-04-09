@@ -81,13 +81,3 @@ h1 {
 .card-container:hover .card {
   transform: rotateX(180deg);
 }
-
-@media screen and (max-width: 480px) {
-    .cards{
-        height: 500px;
-    }
-
-    body{
-        background-color:red;
-    }
-}
