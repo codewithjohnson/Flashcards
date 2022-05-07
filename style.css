@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     background-color:#66cdaa;
     background-image: url("world.png");
@@ -12,11 +16,10 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .game-container{
-    margin-top:30px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +31,7 @@ h1{
 }
 .cards{
     color:white;
-    margin-top:10px;
+    margin-top:15px;
     display: grid;
     grid-template-columns: auto auto auto;
     gap:10px;
@@ -67,6 +70,7 @@ h1{
 }
 
 .front{
+    color: #FFF;
     backface-visibility: hidden;
     border-top:1px solid white;
     background-color: rgb(9, 110, 116);
@@ -74,7 +78,7 @@ h1{
 }
 
 .back{
-    background-color: rgb(75, 14, 218);
+    background-color: rgb(3, 48, 38);
     z-index: 1;
     transform:rotateY(180deg);
 }
