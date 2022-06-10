@@ -70,7 +70,7 @@ h1{
 }
 
 .front{
-    color: #FFF;
+    color: rgb(255, 255, 255);
     backface-visibility: hidden;
     border-top:1px solid white;
     background-color: rgb(9, 110, 116);
@@ -78,6 +78,7 @@ h1{
 }
 
 .back{
+    color:white;
     background-color: rgb(3, 48, 38);
     z-index: 1;
     transform:rotateY(180deg);
